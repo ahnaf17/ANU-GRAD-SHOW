@@ -1,0 +1,360 @@
+
+header {
+    background-color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-bottom: 0.5px solid #77776e;
+}
+
+header h1 {
+    display: inline-block;
+    color: black;
+    padding-right: 10px;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 3000;
+}
+
+.year {
+    padding-left: 12px;
+    border-left: 1px solid #77776e;
+    color: black;
+}
+
+nav {
+    /* display: inline-block; */
+    float: right;
+    padding-top: 30px;
+    padding-right: 0px;
+    font-family: sans-serif;
+}
+
+
+label{
+    float: right;
+    padding-top: 30px;
+    padding-right: 5px;
+    display: none;
+}
+
+
+
+
+.block {
+    /* padding-left: 10px; */
+    /* clear: right; */
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+    /* margin-right: 0px; */
+}
+
+#cross {
+    font-size: 18px;
+    display: none;
+}
+#toggle {
+    display: none;
+}
+
+.name {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 55px;
+    background-color: #e3e582;
+    text-align: center;
+}
+
+.name h1 {
+    font-family: 'Fira Sans', sans-serif;
+    color: black;
+    padding: 40px;
+    font-size: 50px;
+    margin: 0px;
+    padding-bottom: 0px;
+}
+
+.name h4 {
+    font-family: 'Fira Sans', sans-serif;
+    font-style: italic;
+    color: black;
+    padding-top : 5px;
+    padding-left: 0px;
+    margin: 0px;
+    padding-bottom: 0px;
+}
+
+.name p {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: black;
+    padding-top : 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+.name a {
+display: inline-block;
+padding-bottom: 10px;
+padding-right: 20px;
+}
+.name h3{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0px;
+    padding: 5px 10px;
+}
+.name a:link, .name a:visited {
+    background-color: #e3e582;
+    color: black;
+    padding: 2px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+
+.name a:hover, a:active {
+    background-color: white;
+}
+
+.pic {
+   margin: 76px;
+}
+
+figure img{
+    width: 100%;
+    height: 170px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+figure .bg-image {
+    width: 100%;
+    height: 370px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-position: center;
+    background-size: cover;
+}
+
+
+figure{
+    margin: 0px;
+    width: 30%;
+    display: inline-block;
+    padding-right: 14px;
+    padding-left: 22px;
+    padding-top: 35px;
+
+
+}
+
+figcaption {
+    color: white;
+    background : rgba(0, 0, 0, 0.3);
+    margin-top: -58px;
+    padding: 18px;
+    font-family: 'Calibri', sans-serif;
+    font-size: 20px;
+    
+
+}
+
+.footer {
+    padding: 0px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-top: 0.5px solid #77776e;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: black;
+    font-family: sans-serif;
+    background-color:white;
+}
+
+.footer h4 {
+    padding-left: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.footer p {
+    width: 35%;
+    border-top: 1px solid gray;
+    margin: 0px;
+    padding-top: 5px;
+    height: 50px;;
+   
+}
+/* Ideas for Icon generation and code functionality taken from https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 20px
+
+  }
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    display: inline;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  /* .footer a{
+      float: right;
+  } */
+
+  .links {
+      display: inline-block;
+  }
+
+
+
+
+@media only screen and (max-width: 960px) {
+   header {
+       padding: 0px;
+   }
+   header h1 {
+       font-size: 20px;
+       padding-left: 5px;
+
+   }
+
+
+    label {
+       display: block;
+       padding-top: 12px;
+       cursor: pointer;
+
+   }
+
+  
+
+   nav {
+       text-align: center;
+       width: 100%;
+       padding: 0px;
+       display: none;
+       height: 300vh;
+   }
+   nav a {
+       display: block;
+       padding: 15px;
+       margin: 30px;
+       border-bottom: 0.5px solid #EEEEEE
+
+      
+   }
+   #toggle:checked ~ nav {
+    display: block;
+    background-color: white;
+}
+#toggle:checked ~ #menu-button {
+ display: none;
+
+ }
+ #menu-close-button {
+     display: none;
+ }
+ #toggle:checked ~ #menu-close-button {
+     display: block;
+ 
+ }
+
+.name {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 40px;
+}
+
+.name h1 {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.name h4 {
+    padding-left: 0px;
+    padding-top: 2px;
+}
+
+.name p {
+    padding-left: 10px;
+    padding-top: 25px;
+    padding-right: 10px;
+}
+.name h3 {
+    font-size: 12px;
+}
+.name a {
+    padding-left: 10px;
+}
+
+
+
+.name a:hover, a:active {
+    background-color: white;
+}
+
+
+
+.pic{
+    margin: 5px;
+    margin-top: 40px;
+    
+}
+
+figure{
+    padding: 0px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.footer {
+    margin: 0px;
+    margin-top: 30px;
+    padding: 5px;
+    padding-top: 20px;
+}
+
+.footer h4 {
+    font-size: 15px;
+    padding-left: 0px;
+}
+
+.footer p {
+    width: 250px;
+    font-size: 10px;
+    height: 20px;
+    margin-left: 0px;
+    padding-top: 5px;
+
+}
+.footer a {
+    margin: 0px;
+    padding: 5px;
+}
+
+.links {
+    padding-top: 8px;
+}
+
+}
+
+
+
+
+
+
+
+
